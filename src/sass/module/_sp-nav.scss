@@ -1,0 +1,45 @@
+@use 'global' as *;
+.sp-nav {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+
+  background-color: #408F95;
+}
+
+.sp-nav.is-active {
+ display: block;
+}
+
+.sp-nav__wrapper {
+  width: 100%;
+  display: flex;
+  // justify-content: space-between;
+  padding: rem(100) rem(15);
+}
+
+.sp-nav__menu {
+  display: block;
+  width: 50%;
+  
+}
+
+.sp-nav_items {
+  display: flex;
+  // align-items: ;
+  justify-content: space-between;
+  flex-direction: column;
+  // letter-spacing: rem(5);
+  // font-size: rem(30);
+  
+}
+
+.sp-nav__item {
+  width: 100%;
+  // font-size: rem(30);
+  letter-spacing: rem(5);
+}
