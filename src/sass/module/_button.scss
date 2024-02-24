@@ -1,0 +1,19 @@
+@use 'global' as *;
+
+.button {
+  text-align: center;
+}
+
+.button__box {
+    text-align: center;
+    display: inline-block;
+    font-size: rem(14);
+    font-weight: $regular;
+    color: $white;
+    width: rem(202);
+    text-transform: uppercase;
+    background: transparent linear-gradient(90deg, #7633a4 0%, #250d65 100%) 0% 0% no-repeat padding-box;
+    border-radius: 50px;
+    line-height: calc(22/14);
+    padding: rem(23) 0;
+  }

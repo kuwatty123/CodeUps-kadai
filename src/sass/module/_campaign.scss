@@ -1,0 +1,29 @@
+@use 'global' as *;
+
+.campaign {
+  
+}
+
+.campaign_inner {
+	margin: 0 rem(15);
+}
+
+.campaign__entitle {
+	font-size: rem(32);
+  color: #0D2936;
+  line-height: calc(40/32);
+  font-weight: Regular;
+	font-family: Goto;
+}
+
+.campaign__entitle:first-letter {
+	color: #408F95;
+}
+
+.campaign__jptitle {
+	font-size: rem(12);
+  color: #408F95;
+  line-height: calc(18/12);
+  font-weight: Regular;
+	font-family: Noto San JP;
+}

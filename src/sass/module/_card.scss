@@ -1,0 +1,86 @@
+@use 'global' as *;
+
+.card__items {
+  display: flex;
+  // overflow: scroll;
+  gap: rem(24);
+}
+
+.card__contents {
+  margin: rem(10) rem(35) rem(15);
+}
+
+.card__title {
+  font-family: Noto San JP;
+  border-bottom: #408F95 solid rem(1);
+  padding-bottom: rem(8);
+}
+
+.card__title1 {
+  display: inline-block;
+  font-size: rem(12);
+  color:#408F95;
+  line-height: calc(22/12);
+  font-weight: Regular;
+  border: solid rem(1) #408F95;
+}
+
+.card__title2 {
+  font-size: rem(16);
+  color: #0D2936;
+  line-height: calc(24/16);
+
+  font-weight: medium;
+}
+
+.card__content {
+  padding-top: rem(8);
+}
+
+.card__text {
+  font-size: rem(14);
+  color: #0D2936;
+  line-height: calc(24/14);
+  font-family: Noto San JP;
+  font-weight: Regular;
+  text-align: center;
+}
+
+.card__prices {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: rem(16);
+  padding: rem(8) rem(35) rem(24);
+  
+}
+
+.card__list-price {
+  display: inline-block;
+  position: relative;
+  font-size: rem(20);
+  color: #0D2936;
+  line-height: calc(20/20);
+  font-weight: bold;
+  font-family: lato;
+  margin: 0 ;
+}
+
+.card__list-price::after {
+  content: "";
+  width: 100%;
+  height: rem(1);
+  border-bottom: solid rem(3) #C94800;
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+}
+
+.card__discount {
+  font-size: rem(32);
+  color: #408F95;
+  line-height: calc(32/32);
+  font-weight: bold;
+  font-family: lato;
+  border: rem(1);
+}
