@@ -2,6 +2,7 @@
 
 .button {
   text-align: center;
+  margin: rem(40) rem(84) ;
 }
 
 .button__box {
@@ -11,9 +12,9 @@
     font-weight: $regular;
     color: $white;
     width: rem(202);
+    height: rem(54);
     text-transform: uppercase;
-    background: transparent linear-gradient(90deg, #7633a4 0%, #250d65 100%) 0% 0% no-repeat padding-box;
-    border-radius: 50px;
+    background-color:#408F95;
     line-height: calc(22/14);
-    padding: rem(23) 0;
+    padding: rem(16) rem(40);
   }

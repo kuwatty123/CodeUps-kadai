@@ -1,13 +1,14 @@
 @use 'global' as *;
 
 .header {
+  width: 100%;
   height: rem(100);
   background-color: rgba(#0D2936,0.68) ;
   // background-color: transparent;
   color: $white;
   // font-size: rem(10)
-  // z-index: 1000;
-  // position: fixed;
+  z-index: 1000;
+  position: fixed;
 }
 
 .header__inner {
