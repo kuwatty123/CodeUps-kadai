@@ -17,6 +17,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   //スライダー
   $('.mv__slider').slick({
+    arrows: false,//矢印を非表示にする
     autoplay: true, // 自動再生オン
     speed: 1500, // 画像切り替え速度
     fade: true, // フェードで画像が切り替わる

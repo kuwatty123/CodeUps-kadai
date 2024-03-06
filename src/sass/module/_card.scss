@@ -1,5 +1,9 @@
 @use 'global' as *;
 
+.card {
+  // display: none;
+}
+
 .card__items {
   display: flex;
   overflow: scroll;
