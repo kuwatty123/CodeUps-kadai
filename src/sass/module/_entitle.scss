@@ -1,0 +1,20 @@
+@use 'global' as *;
+
+.entitle {
+  font-size: rem(32);
+  color: #0D2936;
+  line-height: calc(40/32);
+  font-weight: Regular;
+	font-family: Goto;
+
+  @include mq(md) {
+    font-size: rem(32);
+    color: #0D2936;
+    line-height: calc(40/32);
+  }
+  
+}
+
+.entitle:first-letter {
+	color: #408F95;
+}

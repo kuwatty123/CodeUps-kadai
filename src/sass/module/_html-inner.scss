@@ -1,0 +1,12 @@
+@use 'global' as *;
+
+.html-inner {
+	min-width: rem(345);
+	margin-left: auto;
+	margin-right: auto;
+
+	@include mq(md) {
+  max-width: rem(1080);
+
+	}
+}

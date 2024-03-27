@@ -1,0 +1,22 @@
+@use 'global' as *;
+
+.swiper {
+  /*スライダーの幅と高さを調整*/
+  width: 100%;
+  height: auto;
+}
+
+.swipe-wrapper {
+	transition-timing-function: linear;
+}
+
+.swiper-slide {
+	/*スライド要素の幅と高さを調整*/
+  width: 100%;
+  height: 100%;
+
+	/*テキストの位置調整*/
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+}

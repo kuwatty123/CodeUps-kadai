@@ -2,32 +2,48 @@
 
 .about-us {
   // height: rem(500);
-  max-width: rem(1440);
-  margin: 0 auto;
-  
+  padding: rem(80) rem(15) rem(70) ;
+
+  @include mq(md) {
+    max-width: rem(1440);
+    margin: 0 auto;
+    padding: rem(140) 0 rem(164) ;
+  }
 }
 
 .about-us__inner {
   position: relative;
-  margin: rem(189) rem(15) 0 rem(15);
+  // margin: rem(89) rem(15) rem(70) ;
+
+  height: 184vw;
+
   @include mq(md) {
-    max-width: rem(1100);
-    margin: rem(140) rem(180) rem(164);
+
+    // max-width: rem(1080);
+    // width: min(rem(1080), 100%);
+    height: min(rem(767), 71vw);
+    // margin: rem(140) rem(180) rem(164);
+    margin: 0 auto;
+
   }
 }
 
 .about-us__title {
   // margin-top: rem(189) 0 rem(64);
-  text-align: center;
+  // text-align: center;
 }
 
 .about-us__entitle {
-  font-size: rem(32);
-  color: #0D2936;
-  line-height: calc(40/32);
-  font-weight: Regular;
-	font-family: Goto;
+  // font-size: rem(32);
+  // color: #0D2936;
+  // line-height: calc(40/32);
+  // font-weight: Regular;
+	// font-family: Goto;
   margin-bottom: rem(4);
+
+  @include mq(md)  {
+    margin-bottom: rem(8);
+  }
 }
 
 .about-us__contents {
@@ -39,25 +55,26 @@
 }
 
 .about-us__entitle {
-	font-size: rem(32);
-  color: #0D2936;
-  line-height: calc(40/32);
-  font-weight: Regular;
-	font-family: Goto;
+	// font-size: rem(32);
+  // color: #0D2936;
+  // line-height: calc(40/32);
+  // font-weight: Regular;
+	// font-family: Goto;
   margin-bottom: rem(4);
 }
 
-.about-us__entitle:first-letter {
-	color: #408F95;
-}
+// .about-us__entitle:first-letter {
+// 	color: #408F95;
+// }
 
 .about-us__jptitle {
-	font-size: rem(12);
-  color: #408F95;
-  line-height: calc(18/12);
-  font-weight: Regular;
-	font-family: Noto San JP;
+	// font-size: rem(12);
+  // color: #408F95;
+  // line-height: calc(18/12);
+  // font-weight: Regular;
+	// font-family: Noto San JP;
   margin-bottom: rem(276);
+
   @include mq(md) {
     margin-bottom: rem(865);
   }
@@ -69,18 +86,19 @@
 
 .about-us__image1 {
   display: inline-block;
-  width: rem(128);
-  height: rem(194);
+  width: 34.1%;
+  // height: rem(194);
   
   position : absolute;
-  top: 21%;
-  left: 50%;;
-  transform: translate(-50% ,-15%);
-  text-align: center;
+  top: 14.5%;
+  left: 0%;;
+  // transform: translate(-50% ,0%);
+  // text-align: center;
   z-index: 1000;
   @include mq(md) {
-    width: rem(400);
-    top: 22%;
+    width: 37%;
+    // top: 13.8%;
+    top: 13.8%;
     left: 0%;
     transform: translate(0%,0%);
     
@@ -89,16 +107,17 @@
 
 .about-us__image2 {
   // display: inline-block;
-  width: rem(281);
+  width: 81.4%;
   // height: rem(186);
   // max-width: 100%;
   position: absolute;
-  top: 21%;
-  left: 50%;
-  overflow-x: hidden;
+  top: 16.8%;
+  // left: 50%;
+  right: 0%;
+  // overflow-x: hidden;
   @include mq(md) {
-    width: rem(880);
-    top: 30%;
+    width: 81.5%;
+    top: 24.3%;
     left: initial;
     right: 0%;
     overflow-x: initial;
@@ -106,36 +125,62 @@
 }
 
 .about-us__text-contents {
-  // display: inline-block;
-  // width: rem(281);
-  // height: rem(186);
-  // max-width: 100%;
-  
-  // top: 36%;
-  // left: 50%;
-  // overflow-x: hidden;
-  padding: 0 rem(35) rem(50) rem(5);
+  margin-bottom: rem(70);
   @include mq(md) {
-    width: rem(880);
     position: absolute;
-    top: 50%;
-    right: 0%;
-    // display: flex;
-    // justify-content: left;
+    top: 39.9%;
+    display: flex;
+    justify-content: space-between;
+    width:77.8%;
+    height: 31.6%;
+    left:18.5%;
+    color: white;
+    z-index: 1000;
+    padding: 0;
+    margin-right: rem(41);
   }
-  
-  
 }
 
 .about-us__sub-title {
+  
   font-size: rem(40);
   font-family: Gotu;
   color: #408F95;
+  line-height: 1;
+  margin-bottom: rem(16);
+
+  @include mq(md) {
+    width: 47.6%;
+  color: white;
+  font-size: rem(80);
+  line-height: calc(100/80);
+  }
+}
+
+.about-us__text-box {
+
+  @include mq(md) {
+  width: 47.6%;
+  }
 }
 
 .about-us__text {
   font-size: rem(16);
   font-family: Noto Sans JP;
   line-height: calc(24/16);
+  margin-bottom: rem(50);
+  color: #0D2936;
+
+  @include mq(md) {
+    color: #fff;
+    margin-bottom: rem(40);
+  }
   
+}
+
+.about-us__btn {
+// margin: rem(40) auto rem(219);
+display: flex;
+justify-content: center;
+margin-bottom: rem(70);
 }

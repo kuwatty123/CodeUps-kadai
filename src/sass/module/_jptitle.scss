@@ -1,0 +1,9 @@
+@use 'global' as *;
+
+.jptitle {
+    font-size: rem(12);
+    color: #408F95;
+    line-height: calc(18/12);
+    font-weight: Regular;
+    font-family: Noto San JP;
+}
