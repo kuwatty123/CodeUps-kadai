@@ -49,7 +49,7 @@ $(".campaign__slider + sp-slider").slick({
 const swiper = new Swiper('.swiper', {
   speed: 1000,
   autoplay: {
-    delay: 3000, // 途切れなくループ
+    delay: 1000, // 途切れなくループ
   },
 
   // Optional parameters
@@ -67,7 +67,7 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 
-  slidesPerView: 4, //スライダーのコンテナ上に2枚同時に表示
+  slidesPerView: 5, //スライダーのコンテナ上に2枚同時に表示
 
   // And if we need scrollbar
   scrollbar: {
