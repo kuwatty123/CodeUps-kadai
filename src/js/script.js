@@ -67,7 +67,7 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 
-  slidesPerView: 5, //スライダーのコンテナ上に2枚同時に表示
+  slidesPerView: 4, //スライダーのコンテナ上に2枚同時に表示
 
   // And if we need scrollbar
   scrollbar: {
