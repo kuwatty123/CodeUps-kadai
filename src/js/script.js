@@ -23,64 +23,77 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     fade: true, // フェードで画像が切り替わる
 });
 
-//スライダー キャンペーン
-$(".campaign__slider + pc-slider").slick({
-  autoplay: true,
-  autoplaySpeed:2000,
-  speed:2000,
-  arrows: true,
-  slidesToShow: 4,
-  slidesToScroll: 1
+// //スライダー キャンペーン
+// $(".campaign__slider + pc-slider").slick({
+//   autoplay: true,
+//   autoplaySpeed:2000,
+//   speed:2000,
+//   arrows: true,
+//   slidesToShow: 4,
+//   slidesToScroll: 1
+// });
+
+// $(".campaign__slider + sp-slider").slick({
+//   autoplay: true,
+//   autoplaySpeed:2000,
+//   speed:2000,
+//   arrows: true,
+//   slidesToShow: 1,
+//   slidesToScroll: 1
+// });
+
+
+
 });
 
-$(".campaign__slider + sp-slider").slick({
-  autoplay: true,
-  autoplaySpeed:2000,
-  speed:2000,
-  arrows: true,
-  slidesToShow: 1,
-  slidesToScroll: 1
-});
+// window.onload = function() {
+  const swiper = new Swiper('.swiper', {
+    speed: 1000,
+    autoplay: {
+      delay: 1000, // 途切れなくループ
+    },
 
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
 
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
 
-});
+    //中央寄せ
+    centeredSlides: true,
 
-const swiper = new Swiper('.swiper', {
-  speed: 1000,
-  autoplay: {
-    delay: 1000, // 途切れなくループ
-  },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
 
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
+    slidesPerView: 1, //スライダーのコンテナ上に2枚同時に表示
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  slidesPerView: 4, //スライダーのコンテナ上に2枚同時に表示
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-    type: 'bullets',
-		clickable: true,
+    breakpoints: {
+      // スライドの表示枚数：768px以上の場合
+      768: {
+        slidesPerView: 4,
+      },
     
-  },
+    },
 
-  spaceBetween: 10 ,//スライド感の余白
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      type: 'bullets',
+      clickable: true,
+      
+    },
+
+    spaceBetween: 10 ,//スライド感の余白
 
 
-});
+  });
+// }
 
 swiper.on('slideChange', function () {
   console.log('slide changed');

@@ -3,14 +3,16 @@
 .campaign {
   // display: none;
   // max-width: rem(1440);
-  margin: 0 auto;
+  // margin: 0 auto;
   // background-color: aqua;
 }
 
 .campaign__inner {
-  margin: 0 auto;
-  max-width: rem(1440);
-	margin: rem(40) rem(15);
+  // margin: 0 auto;
+  // position: relative;
+  // max-width: rem(1440);
+	margin-top: rem(40);
+  margin-bottom: rem(80);
   @include mq(md) {
     padding: rem(120) rem(15);
   }
@@ -47,6 +49,7 @@
 
 .campaign__slider {
   margin: 30px 0 80px;
+  padding-left: 0;
   // max-width: 1080px;
   overflow: visible;
   // width: 80%;
