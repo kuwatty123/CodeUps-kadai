@@ -63,7 +63,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     },
 
     //中央寄せ
-    centeredSlides: true,
+    // centeredSlides: true,
 
     // Navigation arrows
     navigation: {

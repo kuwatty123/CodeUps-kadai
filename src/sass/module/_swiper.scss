@@ -3,21 +3,21 @@
 .swiper {
   /*スライダーの幅と高さを調整*/
   // position: absolute;
-  width: 100%;
+  width: 100vw;
   height: auto;
   // overflow: hidden;
 }
 
-.swipe-wrapper {
+.swiper-wrapper {
 	transition-timing-function: ease;
-  width: 100%;
-  height: 100vh;
+  width: 100vw;
+  // height: 100vh;
   // max-width: 940px!important;
   // margin: 0 auto!important;
   // overflow: visible!important;
-  display: flex;
-  justify-content: right;
-  align-items: center;
+  // display: flex;
+  // justify-content: right;
+  // align-items: center;
 }
 
 .swiper-slide {
@@ -30,3 +30,42 @@
   // justify-content: center;
   // align-items: center;
 }
+
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+  bottom: rem(-25);
+}
+
+.swiper-button-prev {
+  top:-20%;
+  right:10%;
+  left:auto;
+}
+
+.swiper-button-next {
+  top:-20%;
+  right:0%;
+}
+
+/* 前へ次への矢印カスタマイズ */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: ""; //ここでデフォルトの矢印を上書き
+  width: rem(80);
+  height: auto;
+}
+
+/* 前への矢印カスタマイズ */
+.swiper-button-prev::after {
+  background-image: url(../images/common/arrow_prev.png);
+  z-index: 1000;
+}
+/* 次への矢印カスタマイズ */
+.swiper-button-next::after {
+  background-image: url(../images/common/arrow_next.png);
+  z-index: 1000;
+}
+/* 画像サイズ調整 */
+// .swiper-slide img {
+//   height: auto;
+//   width: 100%;
+// }

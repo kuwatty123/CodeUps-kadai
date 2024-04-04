@@ -5,9 +5,9 @@
 }
 
 .card__items {
-  display: flex;
-  // overflow: scroll;
-  gap: rem(24);
+  // display: flex;
+  // // overflow: scroll;
+  // gap: rem(24);
 
   @include mq(md) {
     
