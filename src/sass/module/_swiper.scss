@@ -47,11 +47,23 @@
 }
 
 /* 前へ次への矢印カスタマイズ */
+.swiper-button-prev,
+.swiper-button-next {
+  height: rem(50);
+  width: rem(50);
+}
+
+
+/* 前へ次への矢印カスタマイズ */
 .swiper-button-prev:after,
 .swiper-button-next:after {
   content: ""; //ここでデフォルトの矢印を上書き
-  width: rem(80);
-  height: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: rem(50);
+  margin: auto;
+  width: rem(50);
 }
 
 /* 前への矢印カスタマイズ */
@@ -65,7 +77,7 @@
   z-index: 1000;
 }
 /* 画像サイズ調整 */
-// .swiper-slide img {
-//   height: auto;
-//   width: 100%;
-// }
+.swiper-slide img {
+  height: auto;
+  width: 100%;
+}

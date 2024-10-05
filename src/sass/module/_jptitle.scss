@@ -7,3 +7,17 @@
     font-weight: Regular;
     font-family: Noto San JP;
 }
+
+.jptitle--color {
+    @include mq(md) {
+      color: #fff;
+    }
+  }
+
+.jptitle--font {
+    font-size: rem(14);
+    color: #408F95;
+    line-height: calc(18/14);
+    font-weight: Regular;
+    font-family: Noto San JP;
+}

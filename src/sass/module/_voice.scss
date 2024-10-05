@@ -1,0 +1,95 @@
+@use 'global' as *;
+
+.voice {
+  padding: rem(140) 0;
+}
+
+.voice__contents {
+  
+}
+
+.voice__card-items {
+  display: flex;
+  justify-content: space-between;
+  gap: rem(40);
+}
+
+.voice__card-item {
+  width: 48%;
+  padding: rem(24);
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.voice__header {
+  margin-bottom: rem(44);
+}
+.voice__title {
+  width: 58.5%;
+  border-bottom: #408F95 solid rem(1);
+  padding-bottom: rem(4);
+}
+
+.voice__title-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+ 
+}
+
+
+.voice__title-up{
+  // display: flex;
+  // justify-content: space-between;
+  margin-bottom: rem(8);
+}
+
+
+.voice__age {
+  font-family: "Noto Sans JP";
+  font-size: rem(12);
+  color:#0D2936;
+  line-height: calc(18/12);
+  font-weight: Regular;
+}
+
+.voice__campaign {
+  font-family: "Noto Sans JP";
+  font-size: rem(12);
+  color:#408F95;
+  line-height: calc(22/12);
+  font-weight: Regular;
+  border: solid rem(1) #408F95;
+  }
+
+.voice__title-down {
+  font-family: "Noto Sans JP";
+  font-size: rem(24);
+  color:#0D2936;
+  line-height: calc(24/24);
+  font-weight: Medium;
+}
+
+  .voice__photo {
+    width: 38.1%;
+  }
+  .voice__photo img {
+    // width: 100%;
+  }
+
+  .voice__text {
+      font-family: "Noto Sans JP";
+      font-size: rem(16);
+      color:#0D2936;
+      line-height: calc(24/16);
+      font-weight: Regular;
+  }
+
+
+  .voice__btn {
+    margin-top: rem(80);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
