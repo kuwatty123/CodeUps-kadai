@@ -37,12 +37,12 @@
 }
 
 .footer__text-before {
-
+  
 }
 
-.footer__text-before ::before {
+.footer__text-before::before {
   display: inline-block;
-  content: ' ';
+  content: '';
   width: rem(18);
   height: rem(18);
   background-image: url("../images/common/footer_hitode.png");
