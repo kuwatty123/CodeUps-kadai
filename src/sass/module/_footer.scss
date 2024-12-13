@@ -8,14 +8,28 @@
   color: #fff;
 }
 
+.footer__inner {
+  padding-top: rem(80);
+  padding-bottom: rem(178);
+}
+
 
 .footer__contents {
   padding-right: rem(72);
+  margin-bottom: rem(80);
   
 }
 
-.footer__logo-box {
+.footer__logo-box-ul {
+  
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    gap: rem(40);
+}
 
+.footer__logo-box-li {
+  
 }
 
 .footer__logo {
